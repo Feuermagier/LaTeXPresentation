@@ -1,0 +1,104 @@
+package firemage.latexpres.view;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import de.saxsys.mvvmfx.InjectViewModel;
+import de.saxsys.mvvmfx.JavaView;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
+
+public class MainView extends AnchorPane implements JavaView<MainViewModel>, Initializable {
+	
+	@FXML
+	private MenuItem newPresentationItem;
+	
+	@FXML
+	private MenuItem loadItem;
+	
+	@FXML
+	private MenuItem saveItem;
+	
+	@FXML
+	private MenuItem saveAtItem;
+	
+	@FXML
+	private MenuItem exitAppItem;
+	
+	@FXML
+	private MenuItem addSlideButton;
+	
+	@FXML
+	private MenuItem addSectionButton;
+	
+	@FXML
+	private MenuItem removeButton;
+	
+	@FXML
+	private MenuItem loadItem;
+
+	@InjectViewModel
+	MainViewModel viewModel;
+	
+	public MainView() throws Exception {
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(getClass().getResource("MainView.fxml"));
+		loader.setController(this);
+		Node rootNode = loader.load();
+
+		getChildren().add(rootNode);
+	}
+	
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+    }
+    
+    @FXML
+    public void newPresentation() {
+    	viewModel.getNewPresentationCommand().execute();
+    }
+    
+    @FXML
+    public void load() {
+    	viewModel.getLoadCommand().execute();
+    }
+    
+    @FXML
+    public void save() {
+    	viewModel.getSaveCommand().execute();
+    }
+    
+    @FXML
+    public void saveAt() {
+    	viewModel.getSaveAtCommand().execute();
+    }
+    
+    @FXML
+    public void addSlide() {
+    	viewModel.getAddSlideCommand().execute();
+    }
+    
+    @FXML
+    public void addSection() {
+    	viewModel.getAddSectionCommand().execute();
+    }
+    
+    @FXML
+    public void remove() {
+    	viewModel.getRemoveCommand().execute();
+    }
+    
+    @FXML
+    public void parse() {
+    	viewModel.getParseCommand().execute();
+    }
+    
+    @FXML
+    public void exitApp() {
+    	viewModel.getExitCommand().execute();
+    }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+
+<VBox fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<MenuBar fx:id="menuBar" prefHeight="63.0" prefWidth="600.0">
+			<menus>
+				<Menu text="File">
+					<items>
+						<MenuItem text="New" onAction="#newPresentation" fx:id="newPresentationItem" />
+						<MenuItem text="Open" onAction="#load"  fx:id="loadItem" />
+						<MenuItem text="Save" onAction="#save" fx:id="saveItem" />
+						<MenuItem text="Save at" onAction="#saveAt" fx:id="saveAtItem" />
+						<SeparatorMenuItem />
+						<MenuItem text="Exit" onAction="#exitApp" fx:id="exitAppItem" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<ToolBar prefHeight="40.0" prefWidth="200.0">
+			<items>
+				<Button fx:id="addSlideButton" mnemonicParsing="false"
+					onAction="#addSlide" text="Add Slide" />
+				<Button fx:id="addSectionButton" mnemonicParsing="false"
+					onAction="#addSection" text="Add Section" />
+				<Button fx:id="removeButton" mnemonicParsing="false"
+					onAction="#remove" text="Remove" />
+				<Separator />
+				<Button mnemonicParsing="false" onAction="#parse"
+					text="Parse Presentation" fx:id="parsePresentationButton" />
+				<Separator />
+				<ProgressIndicator fx:id="parseProgressIndicator"
+					prefHeight="3.0" prefWidth="21.0" />
+			</items>
+		</ToolBar>
+		<BorderPane prefHeight="1000" prefWidth="600.0">
+			<left>
+				<TreeView fx:id="treeView" prefHeight="200.0" prefWidth="200.0"
+					BorderPane.alignment="CENTER" />
+			</left>
+			<center>
+				<Pane fx:id="editorPane" prefHeight="700" prefWidth="400" />
+			</center>
+
+			<bottom>
+				<TextArea fx:id="messageArea" prefHeight="100.0" prefWidth="400.0"
+					BorderPane.alignment="CENTER" editable="false" wrapText="true" />
+			</bottom>
+		</BorderPane>
+	</children>
+</VBox>

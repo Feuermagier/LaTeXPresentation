@@ -1,0 +1,48 @@
+package firemage.latexpres.core;
+
+import java.util.ArrayList;
+
+import javafx.beans.InvalidationListener;
+import javafx.beans.value.ObservableValue;
+
+public class PresentationRepository implements ObservableValue {
+
+	private static PresentationRepository instance;
+	private ArrayList<InvalidationListener> listeners;
+
+	private Presentation currentPresentation;
+
+	private PresentationRepository() {
+
+	}
+
+	public static PresentationRepository getInstance() {
+		if (instance == null) {
+			instance = new PresentationRepository();
+		}
+
+		return instance;
+	}
+
+	public void loadPresentation(String path) {
+
+	}
+
+	public void savePresentation() {
+
+	}
+
+	public Presentation getCurrentPresentation() {
+		return currentPresentation;
+	}
+
+	@Override
+	public void addListener(PresentationRepoListener arg0) {
+		listeners.add(arg0);
+	}
+
+	@Override
+	public void removeListener(InvalidationListener arg0) {
+		listeners.remove(arg0);
+	}
+}

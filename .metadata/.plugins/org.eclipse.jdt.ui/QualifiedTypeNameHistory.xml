@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="de.saxsys.mvvmfx.guice.MvvmfxGuiceApplication"/>
+    <fullyQualifiedTypeName name="javafx.stage.Stage"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+    <fullyQualifiedTypeName name="firemage.latexpres.view.MainViewLoader"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+    <fullyQualifiedTypeName name="de.saxsys.mvvmfx.utils.commands.DelegateCommand"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="firemage.latexpres.view.MainViewModel"/>
+    <fullyQualifiedTypeName name="javafx.scene.Node"/>
+    <fullyQualifiedTypeName name="de.saxsys.mvvmfx.utils.commands.Command"/>
+    <fullyQualifiedTypeName name="javafx.beans.value.ObservableStringValue"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleStringProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleBooleanProperty"/>
+    <fullyQualifiedTypeName name="de.saxsys.mvvmfx.utils.commands.Action"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.ReadOnlyBooleanProperty"/>
+    <fullyQualifiedTypeName name="com.google.inject.Singleton"/>
+    <fullyQualifiedTypeName name="firemage.latexpres.core.PresentationRepository"/>
+    <fullyQualifiedTypeName name="javafx.beans.Observable"/>
+    <fullyQualifiedTypeName name="javafx.beans.InvalidationListener"/>
+    <fullyQualifiedTypeName name="javafx.beans.value.ChangeListener"/>
+    <fullyQualifiedTypeName name="firemage.latexpres.core.listener.PresentationRepoListener"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.MenuItem"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.ProgressIndicator"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TreeView"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.BooleanProperty"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="firemage.latexpres.core.Displayable"/>
+</qualifiedTypeNameHistroy>

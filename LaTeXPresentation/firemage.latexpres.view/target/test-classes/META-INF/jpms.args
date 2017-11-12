@@ -1,0 +1,4 @@
+--patch-module
+firemage.latexpres.view=_
+--add-reads
+firemage.latexpres.view=ALL-UNNAMED

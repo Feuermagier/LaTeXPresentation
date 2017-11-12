@@ -1,0 +1,14 @@
+firemage\latexpres\core\section\SubSection.class
+firemage\latexpres\core\Tree.class
+firemage\latexpres\core\SlideType.class
+firemage\latexpres\core\PresentationRepository.class
+firemage\latexpres\core\section\Root.class
+firemage\latexpres\core\Presentation.class
+module-info.class
+firemage\latexpres\core\IParser.class
+firemage\latexpres\core\ISlide.class
+firemage\latexpres\core\section\SubSubSection.class
+firemage\latexpres\core\ISection.class
+firemage\latexpres\core\section\Section.class
+firemage\latexpres\core\Displayable.class
+firemage\latexpres\core\TreeNode.class

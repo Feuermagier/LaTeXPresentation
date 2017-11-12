@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+/**
+ * @author flose
+ *
+ */
+module firemage.latexpres.main {
+	exports firemage.latexpres.main;
+	
+	requires firemage.latexpres.view;
+	
+	requires javafx.controls;
+	
+	requires mvvmfx;
+	requires mvvmFX.guice;
+}
