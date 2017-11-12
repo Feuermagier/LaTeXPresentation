@@ -4897,3 +4897,27 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2017-11-12 10:03:48,912 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-11-12 10:03:48,913 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-11-12 10:03:48,914 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.view\src\test\resources\firemage.latexpres.view
+2017-11-12 10:14:31,141 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,141 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.io\src\main\resources
+2017-11-12 10:14:31,157 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,157 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.io\src\test\resources
+2017-11-12 10:14:31,296 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,297 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.core\src\main\resources
+2017-11-12 10:14:31,297 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,298 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.core\src\test\resources
+2017-11-12 10:14:31,448 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,449 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-11-12 10:14:31,453 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,453 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.view\src\test\resources\firemage.latexpres.view
+2017-11-12 10:14:31,552 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,553 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.main\src\main\resources
+2017-11-12 10:14:31,553 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:31,553 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.main\src\test\resources
+2017-11-12 10:14:32,761 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:32,762 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-11-12 10:14:32,767 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:32,767 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.view\src\test\resources\firemage.latexpres.view
+2017-11-12 10:14:32,946 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:32,946 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.main\src\main\resources
+2017-11-12 10:14:32,947 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-12 10:14:32,947 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Java-Workspaces\LaTeXPresentation\LaTeXPresentation\firemage.latexpres.main\src\test\resources
