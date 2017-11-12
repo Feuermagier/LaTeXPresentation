@@ -77,16 +77,16 @@ public class MainView extends AnchorPane implements JavaView<MainViewModel>, Ini
     	if(viewModel == null)
     		return;
     	
-    	newPresentationItem.disableProperty().bind(viewModel.newPresentationEnabledProperty());
-    	loadItem.disableProperty().bind(viewModel.loadingEnabledProperty());
-    	saveItem.disableProperty().bind(viewModel.savingEnabledProperty());
-    	saveAtItem.disableProperty().bind(viewModel.savingAtEnabledProperty());
-    	exitAppItem.disableProperty().bind(viewModel.exitEnabledProperty());
+    	newPresentationItem.disableProperty().bind(viewModel.newPresentationEnabledProperty().not());
+    	loadItem.disableProperty().bind(viewModel.loadingEnabledProperty().not());
+    	saveItem.disableProperty().bind(viewModel.savingEnabledProperty().not());
+    	saveAtItem.disableProperty().bind(viewModel.savingAtEnabledProperty().not());
+    	exitAppItem.disableProperty().bind(viewModel.exitEnabledProperty().not());
     	
-    	addSlideButton.disableProperty().bind(viewModel.addSlideEnabledProperty());
-    	addSectionButton.disableProperty().bind(viewModel.addSectionEnabledProperty());
-    	removeButton.disableProperty().bind(viewModel.removeEnabledProperty());
-    	parsePresentationButton.disableProperty().bind(viewModel.parseEnabledProperty());
+    	addSlideButton.disableProperty().bind(viewModel.addSlideEnabledProperty().not());
+    	addSectionButton.disableProperty().bind(viewModel.addSectionEnabledProperty().not());
+    	removeButton.disableProperty().bind(viewModel.removeEnabledProperty().not());
+    	parsePresentationButton.disableProperty().bind(viewModel.parseEnabledProperty().not());
     	
     	messageArea.textProperty().bind(viewModel.outputStringProperty());
     	parseProgressIndicator.visibleProperty().bind(viewModel.backgroundOperationProperty());

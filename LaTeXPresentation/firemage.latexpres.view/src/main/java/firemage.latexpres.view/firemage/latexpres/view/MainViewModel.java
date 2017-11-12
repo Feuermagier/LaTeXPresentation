@@ -125,11 +125,11 @@ public class MainViewModel implements ViewModel {
 	}
 
 	public Command getSaveAtCommand() {
-		return saveCommand;
+		return saveAtCommand;
 	}
 
 	public BooleanProperty savingAtEnabledProperty() {
-		return savingEnabled;
+		return savingAtEnabled;
 	}
 
 	private void saveAt() {
