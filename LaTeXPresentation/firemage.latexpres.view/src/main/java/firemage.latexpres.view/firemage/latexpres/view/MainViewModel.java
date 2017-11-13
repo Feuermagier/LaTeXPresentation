@@ -1,5 +1,7 @@
 package firemage.latexpres.view;
 
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -7,11 +9,12 @@ import de.saxsys.mvvmfx.ViewModel;
 import de.saxsys.mvvmfx.utils.commands.Action;
 import de.saxsys.mvvmfx.utils.commands.Command;
 import de.saxsys.mvvmfx.utils.commands.DelegateCommand;
+import firemage.latexpres.core.PresentationRepository;
 import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.stage.FileChooser;
 
 public class MainViewModel implements ViewModel {
 
@@ -46,6 +49,7 @@ public class MainViewModel implements ViewModel {
 	
 	private StringProperty outputString = new SimpleStringProperty();
 	private BooleanProperty backgroundOperationProperty = new SimpleBooleanProperty(false);
+	private PresentationRepository repository = PresentationRepository.getInstance();
 
 	public MainViewModel() {
 		initLoad();
@@ -68,9 +72,8 @@ public class MainViewModel implements ViewModel {
 				load();
 			}
 		};
-		action.runningProperty().addListener((o, ov, nv) -> backgroundOperationProperty.set(nv));
 		action.messageProperty().addListener((o, ov, nv) -> outputString.set(nv));
-		loadCommand = new DelegateCommand(() -> action, loadingEnabled, true);
+		loadCommand = new DelegateCommand(() -> action, loadingEnabled, false);
 
 	}
 
@@ -83,7 +86,11 @@ public class MainViewModel implements ViewModel {
 	}
 
 	private void load() {
-		// TODO: Implement load
+		FileChooser chooser = new FileChooser();
+		chooser.setTitle("Choose file to open");
+		chooser.setInitialDirectory( new File(System.getProperty("user.home")));
+		chooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Presentations", "*.fjp"), new FileChooser.ExtensionFilter("All Files", "*.*"));
+		repository.loadPresentation(chooser.showOpenDialog(null).getAbsolutePath());
 	}
 
 	// Save
