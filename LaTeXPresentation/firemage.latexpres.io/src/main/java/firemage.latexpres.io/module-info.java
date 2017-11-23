@@ -7,8 +7,9 @@
  */
 module firemage.latexpres.io {
 	exports firemage.latexpres.io;
+	requires java.base;
 	
-	//requires firemage.latexpres.core;
+	requires firemage.latexpres.core;
 	
-	//requires jdom2;
+	requires jdom2;
 }

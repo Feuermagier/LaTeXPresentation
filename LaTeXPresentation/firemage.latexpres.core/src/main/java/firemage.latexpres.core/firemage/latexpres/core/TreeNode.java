@@ -2,7 +2,10 @@ package firemage.latexpres.core;
 
 import java.util.ArrayList;
 
-public class TreeNode {
+import javafx.beans.property.Property;
+import javafx.beans.property.StringProperty;
+
+public abstract class TreeNode {
 
 	private ArrayList<TreeNode> children = new ArrayList<>();
 	private TreeNode parent;
@@ -96,4 +99,7 @@ public class TreeNode {
 		nodes.addAll(children);
 		return nodes;
 	}
+	
+	public abstract Property<Object> getContent();
+	public abstract StringProperty getName();
 }

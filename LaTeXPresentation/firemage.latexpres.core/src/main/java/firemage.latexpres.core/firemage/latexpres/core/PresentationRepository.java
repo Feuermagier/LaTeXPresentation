@@ -11,6 +11,7 @@ public class PresentationRepository implements Observable {
 	private ArrayList<InvalidationListener> listeners;
 
 	private Presentation currentPresentation;
+	private int registerCounter = 0;
 
 	private PresentationRepository() {
 
@@ -34,6 +35,11 @@ public class PresentationRepository implements Observable {
 
 	public Presentation getCurrentPresentation() {
 		return currentPresentation;
+	}
+	
+	public int registerElement() {
+		registerCounter++;
+		return registerCounter;
 	}
 
 	@Override
